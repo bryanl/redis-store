@@ -6,7 +6,7 @@ require "redis/distributed_marshaled"
 
 module RedisStore
   def self.rails3? #:nodoc:
-    defined?(::Rails) && ::Rails::VERSION.to_s =~ /3\.0\.0/
+    defined?(::Rails) && ::Rails.version.to_s =~ /3\.0\.0/
   end
 end
 
